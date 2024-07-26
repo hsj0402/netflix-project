@@ -1,0 +1,28 @@
+datatypes
+
+string
+boolean
+integer
+object
+
+String
+Number
+Bigint
+Boolean
+Undefined
+Null
+Symbol
+Object
+   * built in objects
+   * user defined objects
+
+   how to define a javascript object
+      * object literal
+      * new keyword
+      * object constructor
+
+      
+Objects are containers for Properties and Methods.
+Properties are named Values.
+Methods are Functions stored as Properties.
+Properties can be primitive values, functions, or even other objects.

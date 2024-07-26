@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Objects are Mutable</h2>
+
+<p>Changes to a copy of an object will also change the original object:</p>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  this.nationality = "India"
+}
+
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+
+myMother.changeName = function (name) {
+    this.lastName = name;
+}
+myMother.changeName("Doe")
+
+document.getElementById("demo").innerHTML = "My mother's last name is " + myMother.lastName
+</script>
+
+</body>
+</html>
